@@ -36,20 +36,17 @@ This project predicts F1 race results using machine learning models trained on h
    ```
 
 ## Usage
-### 1. Data Preprocessing
-Run the data processing pipeline:
+
+### 1. Train the Model
+Train the model on historical race data:
 ```sh
-python -m src.data_pipeline.data_processing
+python train_model.py
 ```
 
-### 2. Train the Model
+### 2. Make Predictions
+Run the prediction pipeline for a specific race:
 ```sh
-python -m src.models.main
-```
-
-### 3. Make Predictions
-```sh
-python -m src.inference.predict
+python predict_race.py
 ```
 
 ## Debugging & Troubleshooting
